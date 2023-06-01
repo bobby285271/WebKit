@@ -209,7 +209,7 @@ public:
             }
             return result;
         }
-
+        
         int readCheckedDontAdvance(unsigned negativePositionOffest)
         {
             RELEASE_ASSERT(pos >= negativePositionOffest);
