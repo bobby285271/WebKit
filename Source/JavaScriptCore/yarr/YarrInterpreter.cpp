@@ -219,7 +219,7 @@ public:
             if (U16_IS_LEAD(result) && decodeSurrogatePairs && p + 1 < length && U16_IS_TRAIL(input[p + 1])) {
                 if (atEnd())
                     return -1;
-                
+
                 result = U16_GET_SUPPLEMENTARY(result, input[p + 1]);
             }
             return result;
